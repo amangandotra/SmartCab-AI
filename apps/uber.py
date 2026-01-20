@@ -6,7 +6,7 @@ def get_prices(pickup, destination):
     Set pickup location to "{pickup}".
     Set destination to "{destination}".
     Wait until price options are visible.
-
+    Swipe up the area where price options are shown to load more options if available.
     Extract all available cab options with:
     - service name
     - price in INR

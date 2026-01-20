@@ -11,7 +11,9 @@ if not correct, update them.
 
 Wait for price info.
 
-Extract all ride options.
+Extract all ride options. 
+Swipe up the area where price options are shown to load more options if available.
+
 Make sure all the details are extracted correctly, no missing fields or incorrect data.
 
 Return JSON array.
@@ -28,8 +30,11 @@ Return ONLY the JSON array text.
 def book_ride(pickup, destination, vehicle_type):
     goal = f"""
 Open Rapido app.
-Set pickup to "{pickup}".
+If pickup or destination is not set,
+Set pickup location to "{pickup}".
 Set destination to "{destination}".
+and if already set, verify they are correct.
+if not correct, update them.
 
 Vehicle type preference: {vehicle_type}
 

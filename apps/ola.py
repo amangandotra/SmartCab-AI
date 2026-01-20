@@ -7,7 +7,9 @@ Set pickup location to "{pickup}".
 Set destination to "{destination}".
 Wait for price list.
 
-Extract cab options with price and ETA.
+Extract cab options with price and ETA. 
+Swipe up the area where price options are shown to load more options if available.
+
 Make sure all the details are extracted correctly, no missing fields or incorrect data.
 
 Return JSON array like:
